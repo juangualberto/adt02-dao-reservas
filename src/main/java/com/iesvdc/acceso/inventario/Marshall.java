@@ -8,6 +8,9 @@ import java.io.File;
 
 import org.eclipse.persistence.jaxb.MarshallerProperties;
 
+import com.iesvdc.acceso.inventario.dao.EstanciaDao;
+import com.iesvdc.acceso.inventario.daoimp.EstanciaDaoImp;
+import com.iesvdc.acceso.inventario.modelo.Estancia;
 import com.iesvdc.acceso.inventario.modelo.TipoUsuario;
 import com.iesvdc.acceso.inventario.modelo.Usuario;
 
@@ -22,6 +25,12 @@ public class Marshall {
                 "pepe@sincorreo.com");
 
         JAXBContext jaxbContext;
+
+        Estancia es = new Estancia(-1, "Aula 1.7", "Segundo de DAM");
+        EstanciaDao eDao = new EstanciaDaoImp();
+        eDao.create(es);
+        es = eDao.findByNombre(es.getNombre());
+        System.out.println("ESTANCIA: " + es.toString());
 
         try {
             System.setProperty("javax.xml.bind.JAXBContextFactory", "org.eclipse.persistence.jaxb.JAXBContextFactory");

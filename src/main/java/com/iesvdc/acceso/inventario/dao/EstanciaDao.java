@@ -8,7 +8,15 @@ public interface EstanciaDao {
 
     public boolean create(Estancia u);
 
+    /**
+     * Busca en la base de datos estancias por su identificador.
+     * 
+     * @param id número entero positivo
+     * @return null si no está ese id, la Estancia en caso contrario.
+     */
     public Estancia findById(int id);
+
+    public List<Estancia> findAll();
 
     public Estancia findByNombre(String nombre);
 
@@ -19,8 +27,6 @@ public interface EstanciaDao {
     public boolean delete(Estancia u);
 
     public boolean delete(int id);
-
-    public List<Estancia> findAll();
 
     public int count();
 }

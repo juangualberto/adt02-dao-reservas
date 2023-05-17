@@ -24,6 +24,8 @@ public class EstanciaDaoImp implements EstanciaDao {
             ps = con.prepareStatement(sql);
             ps.setString(1, e.getNombre());
             ps.setString(2, e.getDescripcion());
+            // ps.executeUpdate() devuelve un número entero que representa
+            // el número de filas afectadas (con cambios).
             if (ps.executeUpdate() > 0) {
                 resultado = true;
             }
@@ -138,7 +140,7 @@ public class EstanciaDaoImp implements EstanciaDao {
         try {
             ps = con.prepareStatement(sql);
             ResultSet rs = ps.executeQuery();
-            if (rs.next()) {
+            while (rs.next()) {
                 resultado.add(new Estancia(
                         rs.getInt("id"),
                         rs.getString("nombre"),
