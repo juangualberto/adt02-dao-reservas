@@ -83,7 +83,6 @@ CREATE DATABASE `inventario`;
 
 ¿Por qué piensas que borramos la base de datos entera? Porque al crear las tablas usaremos AUTO_INCREMENT en los identificadores, que son contadores que nunca se resetean salvo que borremos la base de datos completamente, es más incluso incrementean cuando intentamos introducir algún dato erróneo (por ejemplo que viole una restricción *unique* o una *foreign key*), estos *auto_increment* incrementan a pesar de que no se pudo introducir o crear el dato.
 
-
 ```sql
 -- usuario
 
@@ -128,4 +127,17 @@ CREATE TABLE `incidencia` (
 ) ENGINE='InnoDB';
 
 ```
+
+A continuación te recordamos algunas de las palabras reservadas de SQL para MySQL Server que hemos usado:
+
+* **int**: Tipo básico entero de 4 bytes con signo.
+* **VARCHAR**: Cadena de caracteres de longitud máxima 65535. Entre paréntesis la longitud máxima permitida para esa columna.
+* **ENUM**: Es muy parecido al *Enum* de Java. Objeto de tipo cadena de caracteres donde sólo se pueden dar unos valores concretos que se indican.
+* **AUTO_INCREMENT**: Como ya hemos hablado antes, se trata de un contador.
+* **NOT NULL**: Aplicado a una columna implica que no puede ser nulo (NULL)
+* **PRIMARY KEY**: Al final de la declaración de una columna significa que es la llave principal.
+* **Foreign Key (usuario) REFERENCES usuario(id)**: Significa que la columna usuario (en la tabla anterior se trata de una columna de tipo *int*) toma su valor de los valores posibles de **id** en la tabla **usuario**.
+* **ENGINE='InnoDB'**: Tipo de motor de almacenamiento. En MySQL podemos elegir entre 
+  * **MyISAM**: Recomendable para aplicaciones en las que dominan las sentencias SELECT ante los INSERT/UPDATE. Mayor velocidad en general a la hora de recuperar datos. 
+  * **InnoDB**: Permite tener las características ACID (Atomicity, Consistency, Isolation and Durability), garantizando la integridad de nuestras tablas. Tiene soporte de transacciones y bloqueo de registros.
 

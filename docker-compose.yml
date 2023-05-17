@@ -18,3 +18,8 @@ services:
     restart: "no"
     ports:
       - 8181:8080
+
+  oracle:
+    image: oraclelinux:8
+    ports:
+      - 1521:1521

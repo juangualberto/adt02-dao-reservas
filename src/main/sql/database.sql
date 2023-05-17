@@ -1,8 +1,6 @@
-
 DROP DATABASE `inventario`;
 
 CREATE DATABASE `inventario`;
-
 
 -- usuario
 
@@ -30,8 +28,6 @@ CREATE TABLE `inventario` (
     `estancia` INT, 
     Foreign Key (`estancia`) REFERENCES `estancia`(`id`)
 ) ENGINE='InnoDB';
-
-
 
 -- incidencias
 

@@ -28,7 +28,6 @@ public class EstanciaDaoImp implements EstanciaDao {
                 resultado = true;
             }
         } catch (SQLException e1) {
-            // TODO Auto-generated catch block
             e1.printStackTrace();
         }
         conexion.destroy();
@@ -52,7 +51,6 @@ public class EstanciaDaoImp implements EstanciaDao {
                         rs.getString("descripcion"));
             }
         } catch (SQLException e1) {
-            // TODO Auto-generated catch block
             e1.printStackTrace();
         }
         conexion.destroy();
@@ -76,7 +74,6 @@ public class EstanciaDaoImp implements EstanciaDao {
                         rs.getString("descripcion"));
             }
         } catch (SQLException e1) {
-            // TODO Auto-generated catch block
             e1.printStackTrace();
         }
         conexion.destroy();
@@ -103,7 +100,6 @@ public class EstanciaDaoImp implements EstanciaDao {
                 resultado = true;
             }
         } catch (SQLException e1) {
-            // TODO Auto-generated catch block
             e1.printStackTrace();
         }
         conexion.destroy();
@@ -127,7 +123,6 @@ public class EstanciaDaoImp implements EstanciaDao {
                 resultado = true;
             }
         } catch (SQLException e1) {
-            // TODO Auto-generated catch block
             e1.printStackTrace();
         }
         conexion.destroy();
@@ -150,7 +145,6 @@ public class EstanciaDaoImp implements EstanciaDao {
                         rs.getString("descripcion")));
             }
         } catch (SQLException e1) {
-            // TODO Auto-generated catch block
             e1.printStackTrace();
         }
         conexion.destroy();
@@ -171,7 +165,6 @@ public class EstanciaDaoImp implements EstanciaDao {
                 // resultado = rs.getInt("count(*)")
             }
         } catch (SQLException e1) {
-            // TODO Auto-generated catch block
             e1.printStackTrace();
         }
         conexion.destroy();
