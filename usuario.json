@@ -1,9 +1,0 @@
-{
-   "usuario" : {
-      "email" : "pepe@sincorreo.com",
-      "id" : 0,
-      "password" : "Secreto123",
-      "tipo" : "ADMIN",
-      "username" : "pepe"
-   }
-}

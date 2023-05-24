@@ -1,0 +1,23 @@
+{
+   "usuarios" : {
+      "listaUsuarios" : [ {
+         "email" : "pepe1@sincorreo.com",
+         "id" : 1,
+         "password" : "Secreto123",
+         "tipo" : "ADMIN",
+         "username" : "pepe1"
+      }, {
+         "email" : "pepe2@sincorreo.com",
+         "id" : 2,
+         "password" : "Secreto123",
+         "tipo" : "OPERARIO",
+         "username" : "pepe2"
+      }, {
+         "email" : "pepe3@sincorreo.com",
+         "id" : 3,
+         "password" : "Secreto123",
+         "tipo" : "USUARIO",
+         "username" : "pepe3"
+      } ]
+   }
+}

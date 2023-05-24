@@ -6,9 +6,12 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Properties;
 import java.util.logging.Logger;
+
+import com.mysql.cj.xdevapi.Statement;
 
 /**
  *
@@ -50,5 +53,29 @@ public class Conexion {
 
             }
         }
+    }
+
+    public boolean createDatabase() {
+        boolean solucion = true;
+        try {
+            String sql = "CREATE DATABASE `inventario`";
+            PreparedStatement ps = this.conn.prepareStatement(sql);
+            ps.executeUpdate();
+        } catch (Exception e) {
+            solucion = false;
+        }
+        return solucion;
+    }
+
+    public boolean dropDatabase() {
+        boolean solucion = true;
+        try {
+            String sql = "DROP DATABASE `inventario`";
+            PreparedStatement ps = this.conn.prepareStatement(sql);
+            ps.executeUpdate();
+        } catch (Exception e) {
+            solucion = false;
+        }
+        return solucion;
     }
 }
