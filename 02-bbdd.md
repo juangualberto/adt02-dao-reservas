@@ -141,3 +141,5 @@ A continuación te recordamos algunas de las palabras reservadas de SQL para MyS
   * **MyISAM**: Recomendable para aplicaciones en las que dominan las sentencias SELECT ante los INSERT/UPDATE. Mayor velocidad en general a la hora de recuperar datos. 
   * **InnoDB**: Permite tener las características ACID (Atomicity, Consistency, Isolation and Durability), garantizando la integridad de nuestras tablas. Tiene soporte de transacciones y bloqueo de registros.
 
+
+\pagebreak

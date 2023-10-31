@@ -1,7 +1,7 @@
 ---
 title: "Programación de bases de datos relacionales"
 author: [Juan Gualberto]
-date: "Junio 2023"
+date: "Noviembre 2023"
 keywords: [computación, Acceso a Datos, Java, marshalling, algoritmo, unmarshalling]
 lang: "es"
 titlepage: true,
