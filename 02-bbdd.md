@@ -142,4 +142,42 @@ A continuación te recordamos algunas de las palabras reservadas de SQL para MyS
   * **InnoDB**: Permite tener las características ACID (Atomicity, Consistency, Isolation and Durability), garantizando la integridad de nuestras tablas. Tiene soporte de transacciones y bloqueo de registros.
 
 
+## Configurando VS Code para acceder a MySQL
+
+Antes de comenzar debemos crear la base de datos desde Adminer:
+
+![Boton de create database en la página de inicio de Adminer](docs/adminer-boton-crear.png)
+
+Creamos la base de datos "inventario":
+
+![Creación de inventario database](docs/adminer-crear-inventario.png)
+
+Buscamos en las extensiones las siguientes y las instalamos:
+
+* **sqltools** de Matheus Teixeira
+![Vista de SQL Tools en las extensiones de VS Code](docs/sqltools.png)
+* **SQLTools MySQL** o bien por **@tag:sqltools-driver**
+![Vista de Driver Mysql SQL Tools en las extensiones de VS Code](docs/sqltools-driver-mysql.png)
+
+Creamos una nueva conexión con esta información:
+
+Clave | valor
+------|------
+Connection name* | Inventario
+Connection group | (vacío)
+Connect using* | (vacío)
+Server and Port |
+Server Address* | localhost
+Port* | 33306
+Database* | inventario
+Username* | root
+Password mode | Save as plaintext in settings
+Password* | zx76wbz7FG89k
+
+Debería verse así:
+
+![Paso 1](docs/sqltools-nueva-mysql.png)
+
+![Paso 2](docs/sqltools-nueva.png)
+
 \pagebreak
