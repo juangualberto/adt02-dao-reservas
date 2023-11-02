@@ -155,8 +155,11 @@ Creamos la base de datos "inventario":
 Buscamos en las extensiones las siguientes y las instalamos:
 
 * **sqltools** de Matheus Teixeira
+
 ![Vista de SQL Tools en las extensiones de VS Code](docs/sqltools.png)
-* **SQLTools MySQL** o bien por **@tag:sqltools-driver**
+
+* **SQLTools MySQL** o bien por  **@tag:sqltools-driver**
+
 ![Vista de Driver Mysql SQL Tools en las extensiones de VS Code](docs/sqltools-driver-mysql.png)
 
 Creamos una nueva conexión con esta información:
