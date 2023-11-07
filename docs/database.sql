@@ -10,7 +10,7 @@ DROP TABLE usuario;
 
 
 CREATE table if NOT EXISTS usuario (
-    id int PRIMARY KEY,
+    id int PRIMARY KEY AUTO_INCREMENT,
     username varchar(12) UNIQUE NOT NULL,
     password varchar(64) NOT NULL,
     tipo varchar(13) NOT NULL,
@@ -21,7 +21,7 @@ CREATE table if NOT EXISTS usuario (
 );
 
 CREATE table IF NOT EXISTS estancia(
-    id INT PRIMARY KEY,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     nombre varchar(30) NOT NULL,
     -- "Aula 1.8", "aula de tecnología"
     descripcion varchar(200),
@@ -30,7 +30,7 @@ CREATE table IF NOT EXISTS estancia(
 
 
 CREATE TABLE IF NOT EXISTS inventario(
-    id INT PRIMARY KEY,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     nombre varchar(30) NOT NULL,
     descripcion varchar(200),
     estancia INT,
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS inventario(
 );
 
 CREATE TABLE IF NOT EXISTS incidencia(
-    id INT PRIMARY KEY,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     asunto varchar(80),
     descripcion varchar(200),
     usuario INT NOT NULL,
