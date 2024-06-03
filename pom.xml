@@ -4,13 +4,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.iesvdc.acceso.inventario</groupId>
-  <artifactId>gestion</artifactId>
+  <groupId>com.iesvdc.acceso.app</groupId>
+  <artifactId>ingesta</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>gestion</name>
-  <!-- FIXME change it to the project's website -->
-  <url>https://www.iesvirgendelcarmen.com</url>
+  <name>Examen Ingesta</name>
+  <url>http://www.iesvirgendelcarmen.com</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -21,25 +20,37 @@
   <dependencies>
 
     <dependency>
-      <groupId>com.oracle.database.jdbc</groupId>
-      <artifactId>ojdbc8-production</artifactId>
-      <version>23.2.0.0</version>
-      <type>pom</type>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.30</version>
     </dependency>
 
 
     <dependency>
-      <groupId>org.eclipse.persistence</groupId>
-      <artifactId>org.eclipse.persistence.moxy</artifactId>
-      <version>4.0.1</version>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.10.1</version>
+    </dependency>
+
+
+    <dependency>
+      <groupId>org.codehaus.mojo</groupId>
+      <artifactId>jaxb2-maven-plugin</artifactId>
+      <version>3.2.0</version>
     </dependency>
 
     <dependency>
-      <groupId>org.glassfish</groupId>
-      <artifactId>jakarta.json</artifactId>
-      <version>2.0.1</version>
+      <groupId>javax.xml.bind</groupId>
+      <artifactId>jaxb-api</artifactId>
+      <version>2.4.0-b180725.0427</version>
+  </dependency>
+
+    <dependency>
+      <groupId>javax.activation</groupId>
+      <artifactId>activation</artifactId>
+      <version>1.1.1</version>
     </dependency>
-  
+
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
@@ -49,7 +60,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.11</version>
+      <version>4.13.2</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -96,6 +107,19 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>exec-maven-plugin</artifactId>
+          <version>1.2.1</version>
+          <configuration>
+              <mainClass>com.iesvdc.acceso.app.Ingesta</mainClass>
+              <arguments>
+				  <!-- Cambiamos este archivo por el que necesitemos para automatizar la ejecución
+				  con mvn exec:java-->
+                  <argument>data/batch.json</argument>
+              </arguments>
+          </configuration>
+      </plugin>
       </plugins>
     </pluginManagement>
   </build>

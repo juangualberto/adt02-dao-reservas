@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reservas>
+    <reserva>
+        <cliente>
+            <id>1</id>
+            <nombre>Juan Pérez</nombre>
+            <contacto>
+                <email>juan.perez@email.com</email>
+                <telefono>+123456789</telefono>
+            </contacto>
+        </cliente>
+        <alojamiento>
+            <id>2</id>
+            <tipo>hotel</tipo>
+            <nombre>Hotel Ejemplo</nombre>
+            <direccion>Calle Principal 123, Ciudad</direccion>
+            <telefono>+987654321</telefono>
+        </alojamiento>
+        <entrada>2023-01-03</entrada>
+        <salida>2023-01-04</salida>
+        <pension>pension_completa</pension>
+    </reserva>
+</reservas>

@@ -1,0 +1,20 @@
+{
+    "cliente": {
+     "id": 2,
+     "nombre": "María Rodríguez",
+     "contacto": {
+        "email": "maria.rodriguez@email.com",
+        "telefono": "+987654321"
+     }
+    },          
+    "alojamiento": {
+       "id": 3,
+       "tipo": "hostal",
+       "nombre": "Otro Hostal",
+       "direccion": "Avenida Secundaria 456, Ciudad",
+       "telefono": "+123456789"
+    },
+    "entrada": "2023-02-10",
+    "salida": "2023-02-15",
+    "pension": "media_pension"
+  }

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reservas>
+    <reserva>
+        <cliente>
+            <id>1</id>
+            <nombre>Juan Pérez</nombre>
+            <contacto>
+                <email>juan.perez@email.com</email>
+                <telefono>+123456789</telefono>
+            </contacto>
+        </cliente>
+        <alojamiento>
+            <id>2</id>
+            <tipo>hotel</tipo>
+            <nombre>Hotel Ejemplo</nombre>
+            <direccion>Calle Principal 123, Ciudad</direccion>
+            <telefono>+987654321</telefono>
+        </alojamiento>
+        <entrada>2023-01-01</entrada>
+        <salida>2023-01-05</salida>
+        <pension>pension_completa</pension>
+    </reserva>
+    <reserva>
+        <cliente>
+            <id>2</id>
+            <nombre>María Rodríguez</nombre>
+            <contacto>
+                <email>maria.rodriguez@email.com</email>
+                <telefono>+987654321</telefono>
+            </contacto>
+        </cliente>
+        <alojamiento>
+            <id>3</id>
+            <tipo>hostal</tipo>
+            <nombre>Otro Hostal</nombre>
+            <direccion>Avenida Secundaria 456, Ciudad</direccion>
+            <telefono>+123456789</telefono>
+        </alojamiento>
+        <entrada>2023-02-10</entrada>
+        <salida>2023-02-15</salida>
+        <pension>media_pension</pension>
+    </reserva>
+    <reserva>
+        <cliente>
+            <id>3</id>
+            <nombre>Ana Gómez</nombre>
+            <contacto>
+                <email>ana.gomez@email.com</email>
+                <telefono>+555555555</telefono>
+            </contacto>
+        </cliente>
+        <alojamiento>
+            <id>4</id>
+            <tipo>piso_turistico</tipo>
+            <nombre>Piso Turístico Acogedor</nombre>
+            <direccion>Plaza Principal 789, Ciudad</direccion>
+            <telefono>+555555555</telefono>
+        </alojamiento>
+        <entrada>2023-03-20</entrada>
+        <salida>2023-03-25</salida>
+        <pension>sin_pension</pension>
+    </reserva>
+    <reserva>
+        <cliente>
+            <id>4</id>
+            <nombre>Carlos Martínez</nombre>
+            <contacto>
+                <email>carlos.martinez@email.com</email>
+                <telefono>+333333333</telefono>
+            </contacto>
+        </cliente>
+        <alojamiento>
+            <id>5</id>
+            <tipo>hotel</tipo>
+            <nombre>Nuevo Hotel</nombre>
+            <direccion>Calle Nueva 789, Ciudad</direccion>
+            <telefono>+111111111</telefono>
+        </alojamiento>
+        <entrada>2023-04-10</entrada>
+        <salida>2023-04-15</salida>
+        <pension>alojamiento_desayuno</pension>
+    </reserva>
+    <reserva>
+        <cliente>
+            <id>5</id>
+            <nombre>Elena López</nombre>
+            <contacto>
+                <email>elena.lopez@email.com</email>
+                <telefono>+999999999</telefono>
+            </contacto>
+        </cliente>
+        <alojamiento>
+            <id>6</id>
+            <tipo>piso_turistico</tipo>
+            <nombre>Piso en el Centro</nombre>
+            <direccion>Calle Central 567, Ciudad</direccion>
+            <telefono>+444444444</telefono>
+        </alojamiento>
+        <entrada>2023-05-15</entrada>
+        <salida>2023-05-20</salida>
+        <pension>sin_pension</pension>
+    </reserva>
+    <reserva>
+        <cliente>
+            <id>6</id>
+            <nombre>Pedro Sánchez</nombre>
+            <contacto>
+                <email>pedro.sanchez@email.com</email>
+                <telefono>+777777777</telefono>
+            </contacto>
+        </cliente>
+        <alojamiento>
+            <id>7</id>
+            <tipo>hostal</tipo>
+            <nombre>Hostal Amistoso</nombre>
+            <direccion>Calle Amistad 789, Ciudad</direccion>
+            <telefono>+666666666</telefono>
+        </alojamiento>
+        <entrada>2023-06-25</entrada>
+        <salida>2023-06-30</salida>
+        <pension>media_pension</pension>
+    </reserva>
+</reservas>

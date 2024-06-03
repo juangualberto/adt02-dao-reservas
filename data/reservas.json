@@ -1,0 +1,130 @@
+{
+  "reservas": [
+    {
+      "id": 1,
+      "cliente": {
+        "id": 1,
+        "nombre": "Juan Pérez",
+        "contacto": {
+          "email": "juan.perez@email.com",
+          "telefono": "+123456789"
+        }
+      },
+      "alojamiento": {
+        "id": 1,
+        "tipo": "hotel",
+        "nombre": "Hotel Ejemplo",
+        "direccion": "Calle Principal 123, Ciudad",
+        "telefono": "+987654321"
+      },
+      "entrada": "Jan 1, 2023, 12:00:00 AM",
+      "salida": "Jan 5, 2023, 12:00:00 AM",
+      "pension": "pension_completa"
+    },
+    {
+      "id": 2,
+      "cliente": {
+        "id": 2,
+        "nombre": "María Rodríguez",
+        "contacto": {
+          "email": "maria.rodriguez@email.com",
+          "telefono": "+987654321"
+        }
+      },
+      "alojamiento": {
+        "id": 2,
+        "tipo": "hostal",
+        "nombre": "Otro Hostal",
+        "direccion": "Avenida Secundaria 456, Ciudad",
+        "telefono": "+123456789"
+      },
+      "entrada": "Feb 10, 2023, 12:00:00 AM",
+      "salida": "Feb 15, 2023, 12:00:00 AM",
+      "pension": "media_pension"
+    },
+    {
+      "id": 3,
+      "cliente": {
+        "id": 3,
+        "nombre": "Ana Gómez",
+        "contacto": {
+          "email": "ana.gomez@email.com",
+          "telefono": "+555555555"
+        }
+      },
+      "alojamiento": {
+        "id": 3,
+        "tipo": "piso_turistico",
+        "nombre": "Piso Turístico Acogedor",
+        "direccion": "Plaza Principal 789, Ciudad",
+        "telefono": "+555555555"
+      },
+      "entrada": "Mar 20, 2023, 12:00:00 AM",
+      "salida": "Mar 25, 2023, 12:00:00 AM",
+      "pension": "sin_pension"
+    },
+    {
+      "id": 4,
+      "cliente": {
+        "id": 4,
+        "nombre": "Carlos Martínez",
+        "contacto": {
+          "email": "carlos.martinez@email.com",
+          "telefono": "+333333333"
+        }
+      },
+      "alojamiento": {
+        "id": 4,
+        "tipo": "hotel",
+        "nombre": "Nuevo Hotel",
+        "direccion": "Calle Nueva 789, Ciudad",
+        "telefono": "+111111111"
+      },
+      "entrada": "Apr 10, 2023, 12:00:00 AM",
+      "salida": "Apr 15, 2023, 12:00:00 AM",
+      "pension": "alojamiento_desayuno"
+    },
+    {
+      "id": 5,
+      "cliente": {
+        "id": 5,
+        "nombre": "Elena López",
+        "contacto": {
+          "email": "elena.lopez@email.com",
+          "telefono": "+999999999"
+        }
+      },
+      "alojamiento": {
+        "id": 5,
+        "tipo": "piso_turistico",
+        "nombre": "Piso en el Centro",
+        "direccion": "Calle Central 567, Ciudad",
+        "telefono": "+444444444"
+      },
+      "entrada": "May 15, 2023, 12:00:00 AM",
+      "salida": "May 20, 2023, 12:00:00 AM",
+      "pension": "sin_pension"
+    },
+    {
+      "id": 6,
+      "cliente": {
+        "id": 6,
+        "nombre": "Pedro Sánchez",
+        "contacto": {
+          "email": "pedro.sanchez@email.com",
+          "telefono": "+777777777"
+        }
+      },
+      "alojamiento": {
+        "id": 6,
+        "tipo": "hostal",
+        "nombre": "Hostal Amistoso",
+        "direccion": "Calle Amistad 789, Ciudad",
+        "telefono": "+666666666"
+      },
+      "entrada": "Jun 25, 2023, 12:00:00 AM",
+      "salida": "Jun 30, 2023, 12:00:00 AM",
+      "pension": "media_pension"
+    }
+  ]
+}

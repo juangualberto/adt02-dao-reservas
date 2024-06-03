@@ -1,0 +1,138 @@
+{
+    "reservas": [
+       {
+         "reserva": {
+            "cliente": {
+             "id": 1,
+             "nombre": "Juan Pérez",
+             "contacto": {
+                "email": "juan.perez@email.com",
+                "telefono": "+123456789"
+             }
+            },          
+            "alojamiento": {
+                "id": 2,
+                "tipo": "hotel",
+                "nombre": "Hotel Ejemplo",
+                "direccion": "Calle Principal 123, Ciudad",
+                "telefono": "+987654321"
+            },
+            "entrada": "2023-01-01",
+            "salida": "2023-01-05",
+            "pension": "pension_completa"
+         }
+       },
+       {
+         "reserva": {
+            "cliente": {
+             "id": 2,
+             "nombre": "María Rodríguez",
+             "contacto": {
+                "email": "maria.rodriguez@email.com",
+                "telefono": "+987654321"
+             }
+            },          
+            "alojamiento": {
+               "id": 3,
+               "tipo": "hostal",
+               "nombre": "Otro Hostal",
+               "direccion": "Avenida Secundaria 456, Ciudad",
+               "telefono": "+123456789"
+            },
+            "entrada": "2023-02-10",
+            "salida": "2023-02-15",
+            "pension": "media_pension"
+          }
+       },
+       {
+         "reserva": {
+            "cliente": {
+             "id": 3,
+             "nombre": "Ana Gómez",
+             "contacto": {
+                "email": "ana.gomez@email.com",
+                "telefono": "+555555555"
+             }
+            },          
+            "alojamiento": {
+               "id": 4,
+               "tipo": "piso_turistico",
+               "nombre": "Piso Turístico Acogedor",
+               "direccion": "Plaza Principal 789, Ciudad",
+               "telefono": "+555555555"
+            },
+            "entrada": "2023-03-20",
+            "salida": "2023-03-25",
+            "pension": "sin_pension"
+         }
+       },
+       {
+         "reserva": {
+            "cliente": {
+               "id": 4,
+               "nombre": "Carlos Martínez",
+               "contacto": {
+                  "email": "carlos.martinez@email.com",
+                  "telefono": "+333333333"
+               }
+            },
+          
+            "alojamiento": {
+               "id": 5,
+               "tipo": "hotel",
+               "nombre": "Nuevo Hotel",
+               "direccion": "Calle Nueva 789, Ciudad",
+               "telefono": "+111111111"
+            },
+            "entrada": "2023-04-10",
+            "salida": "2023-04-15",
+            "pension": "alojamiento_desayuno"
+          }
+       },
+       {
+         "reserva": {
+            "cliente": {
+               "id": 5,
+               "nombre": "Elena López",
+               "contacto": {
+                  "email": "elena.lopez@email.com",
+                  "telefono": "+999999999"
+               }
+            },
+          
+            "alojamiento": {
+               "id": 6,
+               "tipo": "piso_turistico",
+               "nombre": "Piso en el Centro",
+               "direccion": "Calle Central 567, Ciudad",
+               "telefono": "+444444444"
+            },
+            "entrada": "2023-05-15",
+            "salida": "2023-05-20",
+            "pension": "sin_pension"
+            }
+       },
+       {
+         "reserva": {
+            "cliente": {
+               "id": 6,
+               "nombre": "Pedro Sánchez",
+               "contacto": {
+                  "email": "pedro.sanchez@email.com",
+                  "telefono": "+777777777"
+               }
+            },
+            "alojamiento": {
+               "id": 7,
+               "tipo": "hostal",
+               "nombre": "Hostal Amistoso",
+               "direccion": "Calle Amistad 789, Ciudad",
+               "telefono": "+666666666"
+            },
+            "entrada": "2023-06-25",
+            "salida": "2023-06-30",
+            "pension": "media_pension"
+         }
+       }
+    ]
+ }

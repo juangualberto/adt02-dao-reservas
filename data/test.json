@@ -1,0 +1,26 @@
+{
+    "reservas": [
+      {
+      "reserva": {
+         "cliente": {
+            "id": 1,
+            "nombre": "Juan Pérez",
+            "contacto": {
+               "email": "juan.perez@email.com",
+               "telefono": "+123456789"
+            }
+         },          
+         "alojamiento": {
+               "id": 2,
+               "tipo": "hotel",
+               "nombre": "Hotel Ejemplo",
+               "direccion": "Calle Principal 123, Ciudad",
+               "telefono": "+987654321"
+         },
+         "entrada": "2023-01-02",
+         "salida": "2023-01-04",
+         "pension": "pension_completa"
+      }
+      }
+    ]
+ }

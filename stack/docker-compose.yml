@@ -1,0 +1,18 @@
+version: '3.1'
+
+services:
+
+  db-reservas:
+    image: mysql:latest
+    command: --mysql-native-password=ON
+    restart: "no"
+    environment:
+      MYSQL_ROOT_PASSWORD: s83n38DGB8d72
+    ports:
+      - 33307:3306
+
+  adminer:
+    image: adminer:latest
+    restart: "no"
+    ports:
+      - 8181:8080

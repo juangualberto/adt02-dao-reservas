@@ -1,0 +1,8 @@
+{
+    "id": 2,
+    "nombre": "María Rodríguez",
+    "contacto": {
+       "email": "maria.rodriguez@email.com",
+       "telefono": "+987654321"
+    }
+}
