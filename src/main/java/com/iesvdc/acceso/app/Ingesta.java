@@ -67,10 +67,16 @@ public class Ingesta
     private static void creaBBDD(){
         printline();
         System.out.println("Preparando la base de datos para la ingesta...");
-        FactoriaConexion.dropDatabase();
-        FactoriaConexion.createDatabase();
-        FactoriaConexion.initializeDatabase("init_db.sql");
-        FactoriaConexion.createTriggers();
+        if (FactoriaConexion.dropDatabase()) {
+            if (FactoriaConexion.createDatabase()) {
+                    FactoriaConexion.initializeDatabase("init_db.sql");
+                    FactoriaConexion.createTriggers();
+            } else {
+                System.err.println("Error:: No pude crear la base de datos.");
+            }
+        } else {
+            System.err.println("No pude eliminar la base de datos inicial.");
+        }
         printline();
     }
 
